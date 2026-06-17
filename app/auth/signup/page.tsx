@@ -41,7 +41,7 @@ export default function SignupPage() {
           phone: formData.phone,
           authenticated: true,
         }))
-        router.push('/dashboard')
+        router.push('/dashboard/client')
       } else {
         setError('Please fill in all required fields')
       }

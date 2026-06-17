@@ -22,7 +22,7 @@ export default function LoginPage() {
       if (email && password) {
         // Store user session
         localStorage.setItem('user', JSON.stringify({ email, authenticated: true }))
-        router.push('dashboard/client')
+        router.push('/dashboard/client')
       } else {
         setError('Please fill in all fields')
       }
